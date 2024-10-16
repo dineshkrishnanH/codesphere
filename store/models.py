@@ -68,7 +68,7 @@ class wishlist(BaseModel):
 #requwst.user.basket.basket_item
 class wishlistItem(BaseModel):
 
-    wishlist_object=models.ForeignKey(wishlist,on_delete=models.CASCADE,related_name="basket-item")
+    wishlist_object=models.ForeignKey(wishlist,on_delete=models.CASCADE,related_name="basket_item")
 
     Project_object=models.ForeignKey(Project,on_delete=models.CASCADE)
 
